@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className="menu">
+    <nav className="menu">
       <ul>
         <li className="menu__item">
           <Link to="/">
@@ -17,7 +17,7 @@ const Menu = () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

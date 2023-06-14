@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "../styles/Post.scss";
 import "../js/script.js";
 import Card from "./Card";
 

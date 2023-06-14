@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Post.scss";
 
 const Card = () => {
   return (
