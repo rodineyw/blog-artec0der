@@ -1,0 +1,77 @@
+:root {
+  --cor-primary: #eddbc7;
+  --cor-secondary: #526d82;
+
+  --text-primary: #9272a7;
+  --text-secondary: #dde6ed;
+
+  --bg-light: #e4c7a6;
+  --bg-dark: #0F1017;
+
+  --font-primary: "Ubuntu", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background: var(--text-primary);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+
+  position: relative;
+
+  overflow-y: scroll;
+
+  font-family: var(--font-primary);
+  animation: entering 0.7s ease-in-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  background-color: var(--bg-light);
+}
+
+.App {
+  display: grid;
+  grid-template-areas: "header" "main";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100vh;
+}
+
+@keyframes entering {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    grid-template-columns: 100%;
+  }
+}

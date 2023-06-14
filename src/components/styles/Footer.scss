@@ -1,0 +1,23 @@
+.footer {
+ display: flex;
+
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ right: 0;
+
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+
+ gap: .5rem;
+
+ background-image: linear-gradient(to top, var(--bg-dark), 80%, transparent);
+}
+
+.footer img {
+ width: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+}
