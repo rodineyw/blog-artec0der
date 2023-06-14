@@ -36,12 +36,20 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
 
+  display: block;
+
   position: relative;
 
   overflow-y: scroll;
 
   font-family: var(--font-primary);
   animation: entering 0.7s ease-in-out;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  list-style: none;
 }
 
 p {
@@ -56,15 +64,8 @@ header {
   background-color: var(--bg-light);
 }
 
-.cards {
-
-}
-
 .App {
-  display: grid;
-  grid-template-areas: "header" "main";
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 100vh;
+  display: block;
 }
 
 @keyframes entering {
@@ -80,6 +81,8 @@ header {
 
 @media screen and (max-width: 768px) {
   .App {
-    grid-template-columns: 100%;
+    display: block;
+
+    padding: 1rem;
   }
 }

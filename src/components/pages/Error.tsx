@@ -8,7 +8,7 @@ const Error = () => {
       <h1>Oops... Página não encontrada.</h1>
       <p>A página que você está procurando não existe</p>
       <p>
-        Clique <Link to="/">aqui</Link> para retornar para o Inicio.
+        Clique <a href="#">aqui</a> para retornar para o Inicio.
       </p>
     </div>
   );

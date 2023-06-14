@@ -1,20 +1,23 @@
 import React from "react";
 import "./styles/Menu.scss";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contato from "./pages/Contato";
+import Error from "./pages/Error";
 
 const Menu = () => {
   return (
     <nav className="menu">
       <ul>
         <li className="menu__item">
-          <Link to="/">
-            <button className="btn">Home</button>
-          </Link>
+          <button className="btn">
+            <a href="./pages/Home.tsx">Home</a>
+          </button>
         </li>
         <li className="menu__item">
-          <Link to="contato">
-            <button className="btn">Contato</button>
-          </Link>
+          <button className="btn">
+            <a href="./pages/Contato.tsx">Contato</a>
+          </button>
         </li>
       </ul>
     </nav>

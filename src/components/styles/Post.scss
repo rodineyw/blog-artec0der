@@ -1,14 +1,17 @@
 .cards {
   margin-top: 5rem;
+  margin-bottom: 6rem;
+
+  padding-right: 20px;
+  padding-left: 300px;
+
+  display: block;
 }
 
 .page {
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  padding: 2rem;
-  grid-area: "main";
 }
 
 .title-post {
@@ -46,7 +49,7 @@
   width: 90%;
   align-items: center;
   justify-content: center;
-  
+
   object-fit: cover;
   object-position: center;
   transition: 0.5s ease-in-out;
@@ -63,11 +66,11 @@
 
 @media screen and (max-width: 768px) {
   .page {
-    margin: 2rem 0.6rem;
+    justify-content: center;
+    align-items: center;
 
-    padding: .5rem;
-
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
   }
 
   .page p {
@@ -76,5 +79,21 @@
 
   .title-post {
     font-size: 2.5rem;
+  }
+
+  .cards {
+    text-align: center;
+
+    display: flex;
+    position: relative;
+
+    flex-wrap: wrap;
+
+    width: auto;
+    height: 100vh;
+
+    gap: 3rem;
+
+    padding: 10px;
   }
 }
