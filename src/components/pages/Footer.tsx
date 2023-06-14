@@ -6,7 +6,9 @@ const Footer = () => {
     <div className="footer">
       <p>© 2023</p>
       <p>Powered By</p>
-      <img src="icon.svg" alt="Logo artec0der" />
+      <a href="#">
+        <img src="icon.svg" alt="Logo artec0der" />
+      </a>
     </div>
   );
 };

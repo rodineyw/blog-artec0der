@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import "../js/script.js";
 import Card from "./Card";
 
 const Post = () => {
   return (
-    <div>
+    <div className="cards">
       <Card />
       <Card />
       <Card />
