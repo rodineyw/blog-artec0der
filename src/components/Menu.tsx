@@ -11,12 +11,12 @@ const Menu = () => {
       <ul>
         <li className="menu__item">
           <button className="btn">
-            <a href="./pages/Home.tsx">Home</a>
+            <a href="#">Home</a>
           </button>
         </li>
         <li className="menu__item">
           <button className="btn">
-            <a href="./pages/Contato.tsx">Contato</a>
+            <a href="#">Contato</a>
           </button>
         </li>
       </ul>
